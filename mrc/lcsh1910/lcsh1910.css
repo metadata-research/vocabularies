@@ -1,0 +1,99 @@
+  body {
+    margin: 0;
+    font-family: Verdana, Helvetica, sans-serif;
+
+   }
+      .hdr-container {
+	       display: flex;
+	       flex-direction: row;
+	       align-items: center;
+         justify-content: flex-start;
+	       flex-wrap: wrap;
+	       width: 100%;
+      }
+      .hdr-year-title {
+        margin-bottom: .5em;
+        display: flex;
+        order: 2;
+      }
+      .hdr-year {
+        padding: .5em .5em .5em .5em;
+        font-family: 'Lora', serif;
+        font-weight: 500;
+        font-size: 2em;
+        order: 2;
+      }
+      .hdr-title  {
+	       padding: 0 .5em .5em .5em;
+	       font-family: 'Lora', serif;
+         font-weight: 400;
+	       font-size: 1.5em; //2em;
+         order: 2;
+         border-left: .03em solid slategray;
+	    }
+      .hdr-logo {
+         padding-top: .2em;
+         font-size: 1.3em;
+         order: 1;
+      }
+	  #mrclogo {
+	     height: 3.375em;
+	     padding: .938em;
+    }
+
+	  header, footer {
+	     background-color: lightsteelblue;
+	  }
+    section {
+      font-size: .9em;
+    }
+    .biblio {
+      font-style: italic;
+    }
+
+    footer {margin: 0;}
+    .wrapper {
+         margin: 1.5em;
+         // min-height: 100vh;  /* for sticky footer */
+      }
+
+    h3 {
+       color: #697272; //darkslategray;
+       text-transform: uppercase;
+       border-bottom: .03em solid slategray;
+       margin-bottom: .5em;
+       margin-top: 1em;
+       font-weight: 500;
+       font-size: 1.1em;
+    }
+    .min-list {
+       list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .indent {padding-left: 1.5em}
+
+    footer {
+      margin-top: 2em;
+      padding: .4em;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      text-align: center;
+      font-size: .8em;
+    }
+
+    @media (min-width: 730px) {
+       flex-wrap: no-wrap;
+       .hdr-container {
+          justify-content: center; //space-around;
+       }
+       .hdr-year-title {
+         margin-bottom: 0;
+         order: 1
+       }
+       .hdr-title {
+          padding: .5em;
+        }
+       .hdr-logo { order: 2; }
+    }
