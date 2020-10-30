@@ -1,2 +1,5 @@
 plugins:
   - jekyll-redirect-from
+
+redirect_from:
+  - /ark:/13183/b41910/
